@@ -1,0 +1,9 @@
+@media (max-width: 1120px) {
+  .container {
+    padding: 20px;
+  }
+  #intro .intro-image {
+    opacity: 0.5;
+    transition: 2s;
+  }
+}
