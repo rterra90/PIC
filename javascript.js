@@ -146,7 +146,7 @@ function propostas(){
   btns[0].classList.add(`color0`)
 
   if(mobile.matches){
-    displayContent.style.height="6300px"
+    displayContent.style.height="5000px"
     let frameBtn = document.querySelector('.options-frame')
     let frameTitle = document.querySelector('.title-display')
     frameBtn.parentNode.insertBefore(frameBtn, frameTitle);
