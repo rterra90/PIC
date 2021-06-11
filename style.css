@@ -27,6 +27,9 @@ h2 {
   max-width: 1080px;
   width: auto;
 }
+body a {
+  color: #002020;
+}
 /*ANIMAÇÕES*/
 .anima-left {
   opacity: 0;
