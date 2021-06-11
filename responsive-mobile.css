@@ -165,49 +165,49 @@
     font-size: 1.2em;
     font-weight: 600;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(1):hover {
+    #intro-mobile .btn-wrapper > a:nth-child(1):hover {
     background-color: #eb5b25;
     font-weight: 600;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(2):hover {
+  #intro-mobile .btn-wrapper > a:nth-child(2):hover {
     background-color: #4b7980;
     font-weight: 600;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(3):hover {
+  #intro-mobile .btn-wrapper > a:nth-child(3):hover {
     background-color: #6f9e65;
     font-weight: 600;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(4):hover {
+  #intro-mobile .btn-wrapper > a:nth-child(4):hover {
     background-color: #b99116;
     font-weight: 600;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(1):hover .circle {
+  #intro-mobile .btn-wrapper a:nth-child(1):hover .circle {
     color: #dfddb9;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(2):hover .circle {
+  #intro-mobile .btn-wrapper a:nth-child(2):hover .circle {
     color: #dfddb9;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(3):hover .circle {
+  #intro-mobile .btn-wrapper a:nth-child(3):hover .circle {
     color: #dfddb9;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(4):hover .circle {
+  #intro-mobile .btn-wrapper a:nth-child(4):hover .circle {
     color: #dfddb9;
   }
 
-  #intro-mobile .btn-wrapper > div:nth-child(1) .circle {
+  #intro-mobile .btn-wrapper a:nth-child(1) .circle {
     color: #eb5b25;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(2) .circle {
+  #intro-mobile .btn-wrapper a:nth-child(2) .circle {
     color: #4b7980;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(3) .circle {
+  #intro-mobile .btn-wrapper a:nth-child(3) .circle {
     color: #3c7231;
   }
-  #intro-mobile .btn-wrapper > div:nth-child(4) .circle {
+  #intro-mobile .btn-wrapper a:nth-child(4) .circle {
     color: #b99116;
   }
-  #intro-mobile .btn-wrapper div .circle {
-    background: currentColor;
+  #intro-mobile .btn-wrapper a .circle {
+    background-color: currentColor;
     display: inline-block;
     transform: translateY(1px);
     width: 20px;
