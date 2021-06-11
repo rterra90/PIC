@@ -445,7 +445,7 @@
   .news-area article .news-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
   .news-area article span.date {
     font-size: 8px;
