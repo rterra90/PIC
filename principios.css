@@ -1,0 +1,183 @@
+/*estilo interno*/
+h1 {
+  font-size: 50px;
+}
+.inner-btns {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+.inner-btns button {
+  width: 168px;
+  min-width: 125px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Amatic SC";
+  font-weight: bold;
+  border: solid 1px #002020;
+  color: #002020;
+  cursor: pointer;
+  transition: all 0.75s ease-out;
+  font-size: 20px;
+}
+.inner-header img:nth-of-type(1) {
+  width: 320px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.inner-header img:nth-of-type(2) {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+/*PÁGINA PRINCÍPIOS*/
+main {
+  background-image: linear-gradient(
+    #dfddb9,
+    white,
+    white,
+    white,
+    white,
+    #dfddb9
+  );
+}
+main > .container {
+  display: flex;
+  justify-content: space-between;
+}
+.scrollspy-bar {
+  margin-top: 50px;
+  box-shadow: 0px 0px 10px black;
+  background: #e78351f6;
+  width: 5px;
+  height: 168px;
+  overflow-x: visible;
+  border-radius: 4px 4px 4px 4px;
+  list-style-position: inside;
+  position: sticky;
+  top: 230px;
+}
+.scrollspy-bar ul li {
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 4;
+  width: 180px;
+  font-weight: 200;
+}
+.scrollspy-bar ul li:hover {
+  font-weight: 400;
+}
+.scrollspy-bar ul li::marker {
+  font-size: 14px;
+  color: #00202000;
+}
+.scrollspy-bar ul li:hover::marker {
+  color: #0020202d;
+}
+.active-spy {
+  color: #002020;
+  font-weight: 400 !important;
+}
+.scrollspy-bar ul li.active-spy::marker {
+  color: #0020202d;
+}
+
+.contents-frame {
+  width: 75%;
+}
+.contents-frame > div {
+  margin-bottom: 80px;
+}
+.contents-frame h2 {
+  text-align: center;
+  line-height: 2;
+  font-size: 42px;
+}
+.contents-frame ul {
+  list-style-position: inside;
+}
+.contents-frame ul li {
+  line-height: 2.8;
+}
+
+/*RESPONSIVIDADE*/
+/*mobile*/
+
+@media only screen and (max-width: 576px) {
+  /*geral*/
+  h1 {
+    font-size: 2.4em;
+  }
+  .inner-btns {
+    display: none;
+  }
+  .inner-btns-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .inner-btns-bottom span {
+    font-size: 12px;
+    transform: translateY(8px);
+  }
+  .inner-btns-bottom button {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    border: solid 1px #002020;
+    color: #002020;
+    cursor: pointer;
+    transition: all 0.75s ease-out;
+    font-size: 18px;
+  }
+  /*página*/
+  main > .container {
+    flex-direction: column;
+  }
+  .active-spy-bar-mobile {
+    width: 90%;
+    height: 40px !important;
+  }
+  .scrollspy-bar {
+    height: auto;
+    top: 20px;
+    margin: 0 20px 30px;
+    transition: 1s;
+  }
+  .scrollspy-bar ul {
+    display: flex;
+    gap: 30px;
+    margin-left: 30px;
+    align-items: center;
+    list-style: none;
+  }
+  .active-spy-bar-mobile.scrollspy-bar ul {
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+  .scrollspy-bar ul li {
+    line-height: 20px;
+    width: 55px;
+  }
+  .contents-frame {
+    width: 100%;
+  }
+  .contents-frame ul li {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
+/*ajustes desktop*/
+@media (min-width: 577px) {
+  .inner-btns-bottom {
+    display: none !important;
+  }
+}

@@ -1,0 +1,225 @@
+/*estilo interno*/
+h1 {
+  font-size: 50px;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.inner-btns {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+.inner-btns button {
+  width: 168px;
+  min-width: 125px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Amatic SC";
+  font-weight: bold;
+  border: solid 1px #002020;
+  color: #002020;
+  cursor: pointer;
+  transition: all 0.75s ease-out;
+  font-size: 20px;
+}
+.inner-header img:nth-of-type(1) {
+  width: 320px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.inner-header img:nth-of-type(2) {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+/*PÁGINA PLANOS DAS CRIANÇAS*/
+main {
+  background-image: linear-gradient(#dfddb9, white, white, white, #dfddb9);
+}
+h2 {
+  font-size: 28px;
+  margin: 5px 0 60px;
+}
+.planos + hr {
+  border: 1px solid #00202080;
+  margin: 50px auto;
+  width: 35%;
+}
+main .container > p {
+  width: 90%;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+main .container > div ul {
+  list-style: none;
+  font-size: 13px;
+  text-align: center;
+}
+.escolas,
+.equipe {
+  width: 44%;
+  margin-top: 30px;
+  box-shadow: 0px 0px 15px #00202080;
+  border-radius: 5px;
+  padding: 5px 0 15px;
+  border: 2px solid #00202080;
+}
+.escolas {
+  display: inline-block;
+}
+.equipe {
+  float: right;
+}
+.equipe li {
+  line-height: 25px;
+}
+
+.escolas p,
+.equipe p {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  margin: 10px 0;
+}
+.planos {
+  margin-top: 60px;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+.planos .title {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  align-self: center;
+}
+.planos .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+}
+.planos .gallery > div,
+.planos .gallery > div img {
+  max-width: 200px;
+  height: 260px;
+  margin: 0 10px 10px 0;
+  border-radius: 5px;
+  transition: 0.75s;
+  cursor: zoom-in;
+}
+.planos .gallery > div img {
+  box-shadow: 0px 0px 10px #002020;
+}
+.planos .gallery > div:hover {
+  transform: scale(1.15);
+}
+.planos .title p {
+  margin: 0 auto;
+  font-family: "amatic sc", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 30px;
+}
+
+.planos .title p span {
+  font-size: 40px;
+}
+.planos-1 .title {
+  background: #58bda6;
+}
+.planos-2 .title {
+  background: #dba37d;
+}
+.planos-3 .title {
+  background: #e4ca7a;
+}
+.planos-4 .title {
+  background: #bdce78;
+}
+.planos-5 .title {
+  background: #aa9e8d;
+}
+.planos-6 .title {
+  background: #e78251f6;
+}
+@media only screen and (max-width: 576px) {
+  /*geral*/
+  h1 {
+    font-size: 2.4em;
+  }
+  .inner-btns {
+    display: none;
+  }
+  .inner-btns-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  .inner-btns-bottom span {
+    font-size: 12px;
+    transform: translateY(8px);
+  }
+  .inner-btns-bottom button {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: "Amatic SC";
+    font-weight: bold;
+    border: solid 1px #002020;
+    color: #002020;
+    cursor: pointer;
+    transition: all 0.75s ease-out;
+    font-size: 18px;
+  }
+  /*página*/
+  h2 {
+    margin-bottom: 40px;
+    font-size: 1.1em;
+  }
+  main .container p {
+    font-size: 15px;
+  }
+  .escolas,
+  .equipe {
+    width: 90%;
+    margin: 0 auto 20px;
+    display: block;
+  }
+  .equipe {
+    float: none;
+  }
+  .planos {
+    flex-direction: column;
+  }
+  .planos .gallery {
+    margin: 30px 0 0 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .planos .gallery > div,
+  .planos .gallery > div img {
+    height: 100px;
+    margin: 0 0 10px 0;
+  }
+  .planos .gallery > div {
+    flex-basis: 30%;
+  }
+}
+
+/*ajustes desktop*/
+@media (min-width: 577px) {
+  .inner-btns-bottom {
+    display: none !important;
+  }
+}
