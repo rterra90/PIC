@@ -45,9 +45,9 @@ function animate(){
       }
     })
 
-    // if(window.scrollY+screenH>(animaImgIntro.offsetTop+animaImgIntro.offsetHeight/2)){
-    //   animaImgIntro.classList.add('anima-in')
-    // }
+     if(window.scrollY+screenH>(animaImgIntro.offsetTop+animaImgIntro.offsetHeight/2)){
+      animaImgIntro.classList.add('anima-in')
+    }
 
   })
 }
