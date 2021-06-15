@@ -418,10 +418,10 @@
     > p:nth-child(6) {
     grid-area: row4;
     margin-right: 20px;
-  }
+  }*/
   .facts-accordion > .accordion-box.active-accordion .content .preview {
     display: none;
-  } */
+  }
 
   /*título você sabia*/
   #facts-mobile .container {
