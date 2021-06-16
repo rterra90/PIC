@@ -1,0 +1,141 @@
+/*estilo interno*/
+h1 {
+  font-size: 50px;
+}
+.inner-btns {
+  display: flex;
+  justify-content: center;
+  gap: 8%;
+}
+.inner-btns button {
+  width: 168px;
+  min-width: 125px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: "Amatic SC";
+  font-weight: bold;
+  border: solid 1px #002020;
+  color: #002020;
+  cursor: pointer;
+  transition: all 0.75s ease-out;
+  font-size: 20px;
+}
+.inner-header img:nth-of-type(1) {
+  width: 320px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.inner-header img:nth-of-type(2) {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+/*PÁGINA*/
+main {
+  background-image: linear-gradient(
+    #dfddb9,
+    white,
+    white,
+    white,
+    white,
+    white,
+    white,
+    #dfddb9,
+    #dfddb9
+  );
+}
+.container > p {
+  margin-bottom: 40px;
+}
+.table-a,
+.table-b {
+  max-width: 630px;
+  min-width: 600px;
+  margin: 0 auto 40px;
+}
+.table-title {
+  text-align: center;
+}
+.table-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.table-row {
+  display: flex;
+  text-align: center;
+  box-shadow: 0px 0px 14px #00202057;
+}
+.table-row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(248, 248, 255, 0.822);
+  padding: 10px 0;
+  position: relative;
+}
+.table-row > div:nth-child(1) {
+  width: 250px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 2px 0 0 2px;
+}
+.table-row > div:nth-child(1)::after {
+  content: "";
+  width: 2px;
+  height: 20px;
+  background-color: #002020;
+  position: absolute;
+  right: -6px;
+}
+.table-row > div:nth-child(2) {
+  width: 380px;
+  border-radius: 0 2px 2px 0;
+}
+.table-row p {
+  font-size: 15px;
+}
+.table-row > div:nth-child(1) span {
+  font-size: 11px;
+  font-weight: 300;
+  font-style: italic;
+}
+.table-row > div:nth-child(2) span {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/*responsividade*/
+/*mobile*/
+@media only screen and (max-width: 576px) {
+  .table-a,
+  .table-b {
+    max-width: unset;
+    min-width: 300px;
+    margin: 0 auto 40px;
+  }
+  .table-content {
+  }
+  .table-row {
+    /* max-width: 400px; */
+  }
+  .table-row > div:nth-child(1) {
+    width: 35%;
+  }
+  .table-row > div:nth-child(2) {
+    width: 65%;
+  }
+  .table-row > div:nth-child(2) p {
+    font-size: 13px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .table-row > div:nth-child(2) span {
+    width: 80%;
+    font-size: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+}
