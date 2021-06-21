@@ -241,3 +241,21 @@ function backTop(){
   window.scrollTo(0, 580)
 })
 }
+
+/* BOTÕES INTRO MOBILE */
+function buttonsMobile(){
+  let icon = document.querySelectorAll('.intro-icon');
+  let slide = document.querySelectorAll('.intro-slide-title');
+  icon.forEach((element, index) =>{
+    element.addEventListener('click', () =>{
+      let w = `${slide[index].offsetWidth-5}px`;
+      element.classList.toggle('atv-btn');
+      slide[index].classList.toggle('atv');
+      if(!slide[index].classList.contains('atv')){
+        slide[index].style.transform=`translateX(0px)`
+      }else{
+        slide[index].style.transform=`translateX(${w})`;
+      }
+    })
+  })
+}
