@@ -257,7 +257,7 @@ main span {
 }
 .facts-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .banner-plano {
   width: 300px;
