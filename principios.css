@@ -78,7 +78,7 @@ main > .container {
 }
 .active-spy {
   color: #002020;
-  font-weight: 400 !important;
+  font-weight: 600 !important;
 }
 .scrollspy-bar ul li.active-spy::marker {
   color: #0020202d;
